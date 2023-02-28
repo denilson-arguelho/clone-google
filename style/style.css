@@ -56,7 +56,6 @@ header {
 }
 
 .container {
-
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -86,7 +85,7 @@ header {
   justify-content: center;
   align-items: center;
   border: 1px solid #ccc;
-  padding: 4px 14px 0px 14px;
+  padding: 0 14px 0px 14px;
   border-radius: 20px;
 }
 
@@ -209,6 +208,17 @@ header {
   }
 
   #ipesquisa {
+    max-width: 90%;
+    
+  }
+
+  .container-input{
     max-width: 560px;
   }
 }
+
+@media screen and (max-width: 768px){
+  .container-input{
+    width:90%;
+  }
+} 
